@@ -3,7 +3,7 @@ import { identity, education, experience } from "./assets/inputsLists";
 
 function Form({ formData, setFormData }) {
   return (
-    <>
+    <div className="form">
       <InputSection
         title="Identity"
         fields={identity}
@@ -22,7 +22,7 @@ function Form({ formData, setFormData }) {
         data={formData}
         setFormData={setFormData}
       />
-    </>
+    </div>
   );
 }
 
