@@ -22,4 +22,20 @@ body {
 #root {
   display: flex;
   gap: 50px;
+  margin: 20px;
+}
+
+.curriculum {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 297mm;
+  width: 210mm;
+  flex: 0 0 210mm;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.form {
+  flex: 1 1;
 }
