@@ -1,4 +1,4 @@
-import "./Curriculum.css";
+import "../styles/Curriculum.css";
 
 export default function Curriculum({ formData }) {
   return (
@@ -22,19 +22,25 @@ export default function Curriculum({ formData }) {
         </div>
       </div>
 
-      <div className="experience">
+      <div className="experiences">
         <h4 className="experience-title">Practical experience</h4>
-        <div className="experience-position">
-          <b>Position:</b> {formData.position}
-        </div>
-        <div className="experience-company">
-          <b>Company:</b> {formData.company}
-        </div>
-        <div className="experience-dates">
-          <b>Period:</b> {formData.started} - {formData.ended}
-        </div>
-        <div className="experience-responsibilities">
-          <b>Main responsibilities:</b> {formData.responsibilities}
+        <div className="experience-list">
+          {formData.experiences.map((experience, index) => (
+            <div key={index} className="experience">
+              <div className="experience-position">
+                <b>Position:</b> {experience.position}
+              </div>
+              <div className="experience-company">
+                <b>Company:</b> {experience.company}
+              </div>
+              <div className="experience-dates">
+                <b>Period:</b> {experience.started} - {experience.ended}
+              </div>
+              <div className="experience-responsibilities">
+                <b>Main responsibilities:</b> {experience.responsibilities}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
