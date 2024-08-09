@@ -13,7 +13,7 @@ export default function InputSection({
     const formDataObj = Object.fromEntries(new FormData(form));
     const newExperiences = [...data.experiences, formDataObj];
     setFormData({ ...data, experiences: newExperiences });
-    console.log(formDataObj);
+    form.reset();
   };
 
   const experiencesList = () => {
