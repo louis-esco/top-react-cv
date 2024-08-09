@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
+import Curriculum from "./components/Curriculum";
 import { defaultData } from "./assets/defaultData";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Form formData={formData} setFormData={setFormData} />
+      <Curriculum formData={formData} />
     </>
   );
 }

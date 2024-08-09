@@ -18,3 +18,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+#root {
+  display: flex;
+  gap: 50px;
+}
