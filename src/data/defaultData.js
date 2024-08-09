@@ -5,9 +5,13 @@ export const defaultData = {
   school: "INSA Rennes",
   studyTitle: "Génie Mécanique et Automatismes",
   studyDate: "2013 - 2018",
-  company: "Silbo",
-  position: "Head of Product",
-  responsibilities: "In charge of the product team",
-  started: "2013",
-  ended: "2024",
+  experiences: [
+    {
+      company: "Silbo",
+      position: "Head of Product",
+      responsibilities: "In charge of the product team",
+      started: "2013",
+      ended: "2024",
+    },
+  ],
 };
