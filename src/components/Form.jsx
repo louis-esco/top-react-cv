@@ -4,6 +4,7 @@ import { identity, education, experience } from "../data/inputsLists";
 function Form({ formData, setFormData }) {
   return (
     <div className="form">
+      <h2 className="formTitle">Create your curriculum !</h2>
       <InputSection
         title="Identity"
         fields={identity}
